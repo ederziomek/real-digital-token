@@ -1,0 +1,48 @@
+# Dependencies
+node_modules/
+package-lock.json
+yarn.lock
+
+# Build outputs
+target/
+dist/
+build/
+*.so
+
+# Anchor
+.anchor/
+test-ledger/
+
+# IDL
+*.json
+
+# Environment
+.env
+.env.local
+.env.*.local
+
+# Solana
+*.keypair
+id.json
+deploy/
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Rust
+**/*.rs.bk
+Cargo.lock
