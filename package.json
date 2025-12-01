@@ -1,0 +1,54 @@
+{
+  "name": "real-digital-token",
+  "version": "0.1.0",
+  "description": "Real Digital - Stablecoin brasileira 1:1 com BRL na Solana",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ederziomek/real-digital-token.git"
+  },
+  "main": "index.js",
+  "scripts": {
+    "build": "anchor build",
+    "test": "anchor test",
+    "deploy:devnet": "anchor deploy --provider.cluster devnet",
+    "deploy:mainnet": "anchor deploy --provider.cluster mainnet",
+    "mint": "ts-node app/mint.ts",
+    "burn": "ts-node app/burn.ts",
+    "reserve": "ts-node app/reserve.ts",
+    "lint": "eslint . --ext .ts",
+    "format": "prettier --write \"**/*.{ts,js,json,md}\""
+  },
+  "keywords": [
+    "solana",
+    "stablecoin",
+    "brl",
+    "real",
+    "brasil",
+    "defi",
+    "crypto",
+    "web3",
+    "blockchain"
+  ],
+  "author": "Real Digital Team <contato@realdigital.io>",
+  "license": "MIT",
+  "dependencies": {
+    "@coral-xyz/anchor": "^0.29.0",
+    "@solana/spl-token": "^0.3.9",
+    "@solana/web3.js": "^1.87.6"
+  },
+  "devDependencies": {
+    "@types/node": "^20.10.0",
+    "@types/mocha": "^10.0.6",
+    "@types/chai": "^4.3.11",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.3.3",
+    "chai": "^4.3.10",
+    "mocha": "^10.2.0",
+    "eslint": "^8.55.0",
+    "prettier": "^3.1.1"
+  },
+  "engines": {
+    "node": ">=18.0.0",
+    "npm": ">=9.0.0"
+  }
+}

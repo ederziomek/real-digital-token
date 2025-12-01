@@ -14,7 +14,8 @@ build/
 test-ledger/
 
 # IDL
-*.json
+target/idl/*.json
+target/types/*.json
 
 # Environment
 .env
